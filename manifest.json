@@ -1,0 +1,66 @@
+{
+    "name": "CartAutomation",
+    "fantasyName": "Cart Automation",
+    "vendor": "ei1",
+    "type": "extension",
+    "target": "SCA,SCS,SCIS",
+    "target_version": {
+        "SCA": ">=20.2.0",
+        "SCS": ">=20.2.0",
+        "SCIS": "23.2.0"
+    },
+    "version": "1.0.0",
+    "description": "An extension to add protection plan item dynimcally in cart with the insurance item & Shipping Items.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/Main/Configuration/CartAutomation.configuration.json"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js",
+            "checkout": "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js",
+            "myaccount": "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Model.js",
+                    "Modules/Main/JavaScript/ei1.PromotionAmount.Main.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Model.js",
+                    "Modules/Main/JavaScript/ei1.PromotionAmount.Main.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/Main/JavaScript/ei1.ProtectionPlanItemAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Main.js",
+                    "Modules/Main/JavaScript/ei1.ShippingItemsAdd.Model.js",
+                    "Modules/Main/JavaScript/ei1.PromotionAmount.Main.js"
+                ]
+            }
+        }
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/Main/SuiteScript2/ei1.ShippingItemsAdd.Model.js",
+            "Modules/Main/SuiteScript2/ei1.ShippingItemsAdd.Service.ss"
+        ]
+    }
+}

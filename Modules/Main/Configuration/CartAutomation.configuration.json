@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "sideBarItemIds",
+        "group": "extensions",
+        "title": "SideBar Extension"
+    },
+    "properties": { 
+        "MainModule.config": {
+            "group": "extensions",
+            "subtab": "customFields",
+            "type": "array",
+            "title": "Cart Automation",
+            "description": "Config description example",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "fieldId": {
+                        "title": "Item Internal ID",
+                        "mandatory": true,
+                        "type": "string",
+                        "default": "" 
+                    }
+                }
+            }
+        }
+    }
+}
